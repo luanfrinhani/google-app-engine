@@ -11,7 +11,7 @@ from fastai.vision import *
 model_file_url = 'https://drive.google.com/uc?export=download&id=1-9Ajk6OelCwkVnKMCkrU77JLVhn385RL'
 model_file_name = 'model_classification.pkl'
 classes = ['dengue','nao-dengue']
-path = Path(__file__).parent
+path = Path('https://github.com/luanfrinhani/google-app-engine').parent
 
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
